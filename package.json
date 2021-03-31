@@ -1,8 +1,8 @@
 {
-  "name": "reading-book",
+  "name": "vue-learn",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "https://github.com/yayxs/reading-book.git",
+  "repository": "https://github.com/yayxs/vue-learn.git",
   "author": "yayxs <leaderywl@163.com>",
   "license": "MIT"
 }
