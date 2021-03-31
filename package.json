@@ -1,0 +1,8 @@
+{
+  "name": "reading-book",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/yayxs/reading-book.git",
+  "author": "yayxs <leaderywl@163.com>",
+  "license": "MIT"
+}
