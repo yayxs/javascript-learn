@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <button onclick="onBack()">back</button>
+  <button onclick="forward()">forward</button>
+  <button></button>
+  <script>
+    function onBack(){
+      const stateObj = {
+      foo:'bar'
+    }
+    window.history.pushState(stateObj,'page 2','bar.html')
+    }
+    function forward(){
+      window.history.forward()
+    }
+    console.log(window.history.length);
+    window.onpopstate = (e)=>{
+      console.log(e);
+    }
+    window.addEventListener('load',()=>{
+      console.log(window.history.state);
+    })
+  </script>
+</body>
+</html>

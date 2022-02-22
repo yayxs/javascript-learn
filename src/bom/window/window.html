@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    .root{
+      width: 1930px;
+      height: 937px;
+      background-color: aliceblue;
+    }
+  </style>
+</head>
+<body>
+  <div class="root">
+
+  </div>
+  <script>
+    const wn = window.name
+    console.log(wn);
+    const self = window.window === window.self
+    console.log('self',self);
+    console.log(window.devicePixelRatio)
+    const sX = window.screenX // 浏览器和电脑屏幕
+    console.log('sx',sX);
+    const woH = window.outerHeight
+    console.log('woH',woH)
+
+    console.log(window.scrollX)
+    
+  </script>
+</body>
+</html>

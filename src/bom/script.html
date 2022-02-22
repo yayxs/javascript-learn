@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- <script>
+    for(let i = 0;i<99999;i++){
+      console.log(i);
+    }
+  </script> -->
+</head>
+<body>
+  <main>
+    main 渲染
+  </main>
+<!-- 脚本放在最下 -->
+
+  <script src="./a.js" defer>
+    /**
+     * defer 解析html 并行下载js
+     */
+  </script>
+  <script src="./b.js" defer></script>
+</body>
+</html>

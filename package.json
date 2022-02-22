@@ -1,8 +1,10 @@
 {
-  "name": "reading-book",
+  "name": "javascript-learn",
   "version": "1.0.0",
-  "main": "index.js",
-  "repository": "https://github.com/yayxs/reading-book.git",
+  "repository": "https://github.com/yayxs/javascript-learn.git",
   "author": "yayxs <leaderywl@163.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "keywords": [
+    "javascript"
+  ]
 }
