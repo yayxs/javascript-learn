@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    .root{
+      width: 100%;
+      height: 937px;
+      background-color: aliceblue;
+    }
+  </style>
+</head>
+<body>
+  <div class="root">
+
+  </div>
+  <script>
+
+    // window dom文档的窗口 and 脚本正在运行的窗口 and 每个标签有独立的window
+    const wd = window.document
+    console.log(wd);
+    const w =  document.defaultView
+    console.log(w);
+    const isClose = window.closed
+    console.log(wd)
+    console.log(isClose);
+    const logObj = window.console
+    console.log(logObj);
+    console.log(window.document === document);
+    console.log(window.frameElement);
+    console.log(window.frames);
+    console.log(window.history === history);
+    const iH = window.innerHeight // 纯的网页内容高度 不算电脑底下的任务栏 不算浏览器上边的标签
+    const iW = window.innerWidth
+    console.log(iH);
+    console.log('w',iW)
+</script>
+</body>
+</html>

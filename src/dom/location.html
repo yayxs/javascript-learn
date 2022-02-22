@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <a id="myAnchor" href="/en-US/docs/Location.href#Examples">Examples</a>
+  <script>
+   // host developer.mozilla.org:1234
+    const dl = document.location
+    const wl = document.location
+    console.log(dl === wl);
+    console.log(window.location.ancestorOrigins);
+    const anchor = document.querySelector("#myAnchor");
+    console.log(anchor.hash)
+    const a = document.createElement('a')
+    a.href = `https://developer.mozilla.org:1234/en-US/Location.host`
+    console.log(a.host);
+    console.log(a.hostname)
+    console.log(location.hostname); // 127.0.0.1
+    console.log(a.hostname); // developer.mozilla.org
+    console.log(location.href) // http://127.0.0.1:5500/src/dom/location.html
+    console.log(location.origin) // http://127.0.0.1:5500
+  </script>
+</body>
+</html>
