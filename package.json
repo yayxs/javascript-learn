@@ -1,10 +1,11 @@
 {
   "name": "javascript-learn",
-  "version": "1.0.0",
+  "version": "0.0.2",
   "repository": "https://github.com/yayxs/javascript-learn.git",
   "author": "yayxs <leaderywl@163.com>",
   "license": "MIT",
   "keywords": [
-    "javascript"
+    "javascript",
+    "web api"
   ]
 }
