@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .show-dialog{
+      width: 100px;
+      height: 100px;
+    }
+  </style>
+</head>
+<body>
+  <button id="btn" >click</button>
+  <div class="show-dialog"></div>
+  <script>
+const ele = document.querySelector('#btn')
+console.log(ele)
+ele.addEventListener('click',()=>{
+  const att = ele.attributes[0]
+  console.log('att',att)
+  console.log(att.localName)
+})
+const div = document.querySelector('.show-dialog')
+div.addEventListener('click',()=>{
+  const atts = div.attributes
+  const att = atts[0]
+  console.log('att',att)
+  console.log(att.value)
+})
+  </script>
+</body>
+</html>
