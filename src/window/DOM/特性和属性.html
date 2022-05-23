@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .card-item{
+      width: 100px;
+      height: 60px;
+      border: 1px solid #eee;
+      cursor: pointer;
+    }
+    .a-box{
+      border: 1px solid #efefef;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div id="app">
+    <div class="card-item" data-tracker="target-ele">
+      <p>add car <span>           +</span></p>
+      
+    </div>
+
+    <div class="a-box" data-tracker="other-ele">
+      <span> some words</span>
+    </div>
+  </div>
+  
+
+  <script>
+    window.addEventListener('click',(e)=>{
+      const { target } = e
+
+      // 点击目标元素中有没有data-tracker
+      // const hasDataTracker = target.hasAttribute('data-tracker')
+      // console.log('hasDataTracker',hasDataTracker)
+      // if(hasDataTracker){
+      //   const eleVal = target.dataset['tracker']
+      //   console.log(eleVal)
+      // }
+        const clickEleInfo = target?.getBoundingClientRect()
+        console.log('clickEleInfo',clickEleInfo)
+
+        const { bottom ,height,left,right,top,width,x,y} = clickEleInfo
+
+        console.log(JSON.stringify(clickEleInfo,null,2))
+        console.log(e)
+    
+    },false)
+  </script>
+</body>
+</html>

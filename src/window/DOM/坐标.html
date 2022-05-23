@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0
+    }
+    #app{
+      height: 1200px;
+      padding-left: 52px;
+    }
+    .ele{
+      width: 190px;
+      height: 90px;
+      /* border-radius: 20px; */
+      background-color: #eee;
+    }
+  </style>
+</head>
+<body>
+  
+  <div id="app">
+    <div class="ele"> </div>
+  </div>
+  <script>
+    const dom = document.querySelector('.ele')
+
+    dom.addEventListener('click',(e)=>{
+      const eleInfo = dom.getBoundingClientRect()
+      // console.log('eleInfo',eleInfo)
+
+      const { width,height,bottom,left,x,right,y,top } = eleInfo
+      // console.log('宽度',width)
+      // console.log('高度',height)
+      // console.log('x',x)
+      // console.log('left',left)
+      // (x,y) 左上角
+      console.log('top',top)
+      console.log('y',y)
+    },false)
+  </script>
+</body>
+</html>

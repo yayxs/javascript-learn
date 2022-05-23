@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    main{
+      position: relative;
+    }
+    article div{
+      position: absolute;
+      left: 180px;
+      top: 180px;
+    }
+  </style>
+</head>
+<body>
+  <main style="position: relative" id="main">
+    <article>
+      <div id="example" style="position: absolute; left: 180px; top: 180px">code test</div>
+    </article>
+  </main>
+
+  <script>
+    // 目标dom对象
+    const dom = document.querySelector('#example')
+    // 最近的祖先
+    const domP = dom.offsetParent
+    const x = dom.offsetLeft // 180
+    const y = dom.offsetTop // 180
+  </script>
+</body>
+</html>
