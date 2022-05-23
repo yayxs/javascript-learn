@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body *{
+      margin: 10px;
+      border: 1px solid blue;
+    }
+    main{
+      width: 150px;
+  height: 150px;
+  position: relative;
+  cursor: pointer;
+    }
+    .div{
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  width: 100px;
+  height: 100px;
+    }
+    p {
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  margin: 0;
+}
+  </style>
+</head>
+<body>
+      <main>
+        main
+        <div class="div">
+          div
+          <p>p</p>
+        </div>
+      </main>
+
+  <script>
+    // const dom = document.querySelector('main')
+    // dom.onclick = function(e){
+    //   console.log(event.currentTarget) // 绑定事件处理程序的元素
+    // }
+
+    const doms = document.querySelectorAll('*')
+    console.log(doms);
+
+
+    for(let elem of doms){
+      elem.addEventListener('click',(e)=>{
+        console.log('捕获',elem.tagName)
+      },true)
+
+      elem.addEventListener('click',(e)=>{
+        console.log('冒泡',elem.tagName)
+      },false)
+    }
+  </script>
+</body>
+</html>

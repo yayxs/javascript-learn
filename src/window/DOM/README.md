@@ -1,0 +1,8 @@
+- offsetParent 最近一个祖先元素
+- offsetLeft offsetTop 相对于offsetParent左上角边缘的坐标
+- offsetWidth offsetHeight 元素的外部的
+- clientLeft clientTop 左上角外角 到左上角内角
+- clientWidth clientHeight 包括padding 不包括滚动条
+- scrollWidth scrollHeight 包括元素的滚动出的不可见的部分
+- scrollLeft scrollTop 滚出元素上半部分的宽高
+- scrollLeft scrollTop 可读可写
