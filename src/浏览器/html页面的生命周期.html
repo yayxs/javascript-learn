@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <main>
+    <p>dom树</p>
+    <!-- <img id="img" src="https://en.js.cx/clipart/train.gif?speed=1&cache=0"> -->
+  </main>
+
+  <script>
+    document.addEventListener('DOMContentLoaded',()=>{
+      console.log('dom-ok');
+    })
+  </script>
+  <script>
+    console.log('other-script')
+    const domStatus =document.readyState
+
+    console.log('dom-status', domStatus);
+  </script>
+
+  <!-- <script>
+    // dom就绪
+    document.addEventListener('DOMContentLoaded',domOk)
+    
+    function domOk(){
+      console.log('dom ok');
+      const img = document.querySelector('#img')
+      console.log(img.offsetWidth);
+    }
+  </script> -->
+</body>
+</html>

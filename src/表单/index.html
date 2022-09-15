@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+
+<p>表单的事件  change input copy paste</p>
+
+<form>
+  <input type="text" onchange="console.log(this.value)">
+  <select onchange="console.log(this.value)" >
+    <option value="">Select something</option>
+    <option value="1">op1</option>
+
+    <option value="2"></option>
+    <option value="3"></option>
+
+  </select>
+  <input type="submit">
+</form>
+
+<script>
+  function handleChange(val){
+    console.log(val);
+  }
+</script>
+
+
+
+  <!-- <form action="" name="first">
+    <input type="text" name="one" value="1">
+    <input type="text" name="two" value="2">
+  </form>
+  <form action="" name="last" ></form>
+ <form>
+   <select name="" id="select" multiple>
+    <option value="1">1</option>
+    <option value="2">2</option>
+
+   </select>
+ </form>
+
+  <form action="" name="a">
+    <input type="text" name="" id="ipt">
+  </form> -->
+  <!-- <script>
+    // const form = document.forms.first
+    // const elem = form.elements.one
+    // console.log(form);
+    // console.log(elem);
+
+    const elem = document.forms.a
+
+    // console.log(ele);
+  </script> -->
+</body>
+</html>
