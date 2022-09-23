@@ -2,10 +2,11 @@
   "name": "javascript-learn",
   "version": "0.0.2",
   "repository": "https://github.com/yayxs/javascript-learn.git",
-  "author": "yayxs <leaderywl@163.com>",
+  "author": "vanlee",
   "license": "MIT",
   "keywords": [
     "javascript",
-    "web api"
+    "web api",
+    "高级程序设计"
   ]
 }

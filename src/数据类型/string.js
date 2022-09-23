@@ -1,4 +1,6 @@
-
+/**
+ * 零个或者多个16位字符序列
+ */
 let str = `test JavaScript`
 
 let res = str.match(/Java(Script)/)
@@ -18,7 +20,7 @@ console.log(res && res.length)
 /**
  * 分割字符串
  */
-console.log('2022-12-12'.split(/-\s*/));
+console.log('2022-12-12'.split(/-\s*/))
 console.log('12:34'.split(':'))
 console.log('123'.search(/2/))
 
@@ -26,7 +28,7 @@ console.log('123'.search(/2/))
  * 搜索替换
  */
 
-console.log('2022-12-12'.replace(/-/g,'/'));
+console.log('2022-12-12'.replace(/-/g, '/'))
 
 let timeStr = '2022-05-18 10:58:32'
 
