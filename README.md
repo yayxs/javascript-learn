@@ -200,3 +200,192 @@ console.log(secNode)
   console.log(p2Node.hasChildNodes()) // false
 </script>
 ```
+
+```js
+/**
+ * 移除节点
+ */
+
+const pNode = document.querySelector('.remove-p')
+const PNodeChildNodes = pNode.childNodes
+console.log(PNodeChildNodes)
+
+// 删除第一个子节点
+
+const ret = pNode.removeChild(pNode.firstChild)
+```
+
+| 功能点         |                                 |                                          |
+| -------------- | ------------------------------- | ---------------------------------------- |
+| 获取完整的 URL | document.URL                    | http://127.0.0.1:5500/src/DOM/index.html |
+| 域名字符串     | document.domain                 |                                          |
+| 获取 body 元素 | document.body                   |                                          |
+| 获取 html 标签 | window.document.documentElement |                                          |
+
+```js
+// 文档子节点
+/**
+ * 获取html元素
+ */
+
+const html1 = window.document.documentElement // html 标签
+// const html2 = window.document.childNodes[0] // html 标签
+// const html3 = window.document.firstChild
+
+// console.log(html1)
+// console.log(html2)
+// console.log(html3)
+
+/**
+ * 获取body元素
+ */
+const b = window.document.body
+console.log(b)
+
+/**
+ * 获取doctype
+ */
+console.log(window.document)
+
+for (let k in window.document) {
+  // console.log(k)
+}
+
+// 文档信息 标准Document 对象的所没有的属性
+
+/**
+ * 读取文档标题
+ */
+const oT = document.title
+console.log(oT)
+
+/**
+ * 获取完整的URL
+ */
+
+const u = document.URL //
+console.log(u)
+
+/**
+ * 获取域名字符串
+ */
+
+const dM = document.domain
+console.log(dM)
+```
+
+---
+
+**HTML5** 新增
+
+| 功能点     |                     |                      |
+| ---------- | ------------------- | -------------------- |
+| head 属性  | document.head       | 直接获得<head> 元素  |
+| compatMode | document.compatMode | 检测页面渲染模式     |
+| readyState | document.readyState | 判断文档是否记载完毕 |
+
+- `DOM Core` 在 DOM1 核心部分的基础上 为节点增加方法和属性
+- `DOM Views` 定义基于样式信息的不同视图
+- `DOM Events` 定义通过事件实现 DOM 文档交互
+
+样式 3 种定义方式 `外部样式表` `文档样式表` `元素特定样式`
+
+
+```js
+
+/**
+ * File 类型
+ * File API 仍然以表单中的文件输入字段为基础、但是增加直接反问文件信息的
+ * name 本地系统中的文件名
+ * size 字节大小
+ * type MIME 类型的字符串
+ * lastModifiedDate 只有Ch
+ */
+
+const fileList = document.getElementById('file-list')
+
+fileList.addEventListener('change',(e)=>{
+
+
+  let files = e.target.files,
+  i=0,len = files.length
+
+  while(i<len){
+    const f = files[i]
+    console.log(f)
+    i++;
+  }
+})
+
+```
+
+一些工具：`npm`   
+
+包管理：`npm` `yarn` `bower` `JSPM`
+模块加载器：`SystemJS` `RequireJS`
+模块打包器: Webpack JSPM Rollup
+编译 Babel
+类型：TypeScript Flow
+高性能脚本工具 WebAssembly asm.js
+
+
+
+/**
+ * 背景：规范体系
+ * 可维护性 容易理解、符合常识、容易扩展、容易调试
+ * 编码规范：可读性、缩进使用空格数
+ * 注释：函数方法、大型代码块、复杂的算法、使用黑科技
+ * 变量和函数命名
+ * 变量名是名词
+ * 函数名是动词开始 doSome
+ * 常量 STS_CODE
+ * 松散耦合
+ * 可维护性 性能优化 部署
+ * 适合C语言的性能优化 使用switch
+ * 限制DOM操作的数量
+ * 编码 编译测试
+ * 编码 测试
+ * 传输负载 服务器发送给浏览器的实际字节数
+ */
+
+// 声明语句的时候一条语句
+let a=1,b=2
+/**
+ * 尊重对象所有权
+ * 
+ */
+
+```js
+/**
+ * 模块标识符 可能是字符串 模块文件的实际路径
+ * 模块系统 键值实体
+ * 原生浏览器模块标识符必须提供文件的路径
+ * nodejs 搜索 node_modules 
+ */
+
+/**
+ * 模块依赖 管理依赖
+ */
+
+/**
+ * 模块加载
+ * 加载模块的
+ */
+
+/**
+ * 入口 代码的起点
+ */
+const globalData = ''
+
+const Foo =  (function(){
+  console.log('bar');
+  
+
+  return {
+
+  }
+})(globalData)
+
+console.log(Foo);
+
+```

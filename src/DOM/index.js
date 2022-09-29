@@ -1,11 +1,7 @@
 /**
- * 移除节点
+ * 描述DOM扩展的两个标准：Selectors API 和 HTML5
  */
 
-const pNode = document.querySelector('.remove-p')
-const PNodeChildNodes = pNode.childNodes
-console.log(PNodeChildNodes)
+// 取得body 元素
 
-// 删除第一个子节点
-
-const ret = pNode.removeChild(pNode.firstChild)
+const b = document.querySelector('body')

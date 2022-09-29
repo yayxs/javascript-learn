@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    /**
+ * JSON 通用的数据格式
+ * 简单的值 '' 1 true null 
+ * undefined 不行
+ * 对象
+ * 数组
+ * 结构化数组
+ * json中没有变量
+ * JSON出现之后迅速称为了Web 服务事实系列化标准
+ * js的子集
+ * es6新增了JSON对象 引入解析JSON的能力
+ */
+// 数值 
+const jsonNumber = 5 //  数值
+
+const jsonString = "hello json"
+const bJSON = true
+const nonJSON = null
+
+// eval函数可以解析 解释 并将其作为js对象和数组返回
+
+// js 序列化为json字符串 
+// json解析为原生js值 
+
+const obj = {
+  data:{
+    id:'1'
+  },
+  isUndefined:undefined,
+  isNull:null
+}
+
+console.log(JSON.stringify(obj,['data','id']));
+let book = {
+  title:'a book',
+  list:[],
+  // 如果可以获取实际的值 调用toJSON() 方法获取实际的值
+  // 否则使用默认的序列化
+  toJSON(){
+    return this.title
+  }
+}
+console.log(JSON.stringify(book));
+
+  </script>
+</body>
+</html>
