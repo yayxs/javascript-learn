@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>表单脚本</title>
+  </head>
+  <body>
+    <!-- <form>
+  
+  <input type="text" name="username" id="" size="2" maxlength="11" value="init val">
+  <textarea name="" id="desc" cols="10" rows="3"></textarea>
+
+  <input type="text" name="phoneNumber" id="phoneNumber">
+  <input type="submit" value="提交">
+  <input type="reset" value="重置表单">
+</form>
+
+<script src="./index.js"></script> -->
+
+    <form>
+      <input type="text" onchange="console.log(this.value)" />
+      <select onchange="console.log(this.value)">
+        <option value="">Select something</option>
+        <option value="1">op1</option>
+
+        <option value="2"></option>
+        <option value="3"></option>
+      </select>
+      <input type="submit" />
+    </form>
+
+    <script>
+      function handleChange(val) {
+        console.log(val)
+      }
+    </script>
+
+    <form action="" name="first">
+      <input type="text" name="one" value="1" />
+      <input type="text" name="two" value="2" />
+    </form>
+    <form action="" name="last"></form>
+    <!-- 选择框编程 -->
+    <form>
+      <select name="location" id="selLocation">
+        <option value="csc">csc</option>
+        <option value="wh">wh</option>
+      </select>
+    </form>
+    <script>
+
+      /**
+       * add newOption relOption
+       * multiple 允许多选
+       * options
+       * /
+    </script>
+
+    <hr />
+    <!-- html5新增的api -->
+    <form>
+      <!-- 必填字段 -->
+      <input type="text" name="" required placeholder="必填字段" />
+      <!-- 新增的type值 email url -->
+      <input type="email" name="" id="" />
+      <input type="url" name="" id="" />
+      <!-- number -->
+      <input type="number" name="" id="" />
+      <input type="range" name="" id="" />
+      <input type="datetime" name="" id="" />
+      <input type="datetime-local" name="" id="" />
+      <input type="date" name="" id="" />
+      <input type="month" name="" id="" />
+      <input type="week" name="" id="" />
+      <input type="time" name="" id="" />
+      <!-- 输入模式 -->
+      <input type="text" pattern="\d+" />
+    </form>
+  </body>
+</html>

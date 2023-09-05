@@ -1,0 +1,8 @@
+// import './makeString'
+// import './trim'
+// import './decapitalize'
+// import './camelize'
+// import './chars'
+// import './endsWith'
+// import './include'
+import './javascript-utils'

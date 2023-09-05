@@ -1,13 +1,19 @@
 {
   "name": "javascript-learn",
-  "version": "0.0.2",
+  "version": "0.0.1",
   "repository": "https://github.com/yayxs/javascript-learn.git",
-  "author": "vanlee",
+  "author": "van-lee",
+  "scripts": {
+    "format": "prettier --write --cache ."
+  },
   "license": "MIT",
   "keywords": [
     "javascript",
     "web api",
     "高级程序设计",
     "对象"
-  ]
+  ],
+  "devDependencies": {
+    "vite": "^4.4.9"
+  }
 }

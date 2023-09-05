@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p>
+      <span>pushState &amp; replaceState: </span><br />
+      <a href="/" onclick="return pushLink(this)">push /</a>
+      <a href="/one" onclick="return pushLink(this)">push /one</a>
+      <a href="/two" onclick="return pushLink(this)">push /two</a>
+      <a href="/three" onclick="return replaceLink(this)">replace /three</a>
+    </p>
+    <!-- <script src="./app.js" type="module"></script> -->
+    <script type="module">
+      import { createBrowserHistory } from './app.js'
+      const h = createBrowserHistory({})
+      console.log(h)
+    </script>
+    <script>
+      function pushLink(link) {
+        const href = link.getAttribute('href')
+        console.log(href)
+        return false
+      }
+    </script>
+  </body>
+</html>
