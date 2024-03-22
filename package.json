@@ -1,19 +1,26 @@
 {
-  "name": "javascript-learn",
+  "name": "js-learn",
+  "type": "module",
   "version": "0.0.1",
-  "repository": "https://github.com/yayxs/javascript-learn.git",
-  "author": "van-lee",
-  "scripts": {
-    "format": "prettier --write --cache ."
-  },
+  "author": "vanlee",
   "license": "MIT",
+  "repository": "https://github.com/yayxs/javascript-learn.git",
   "keywords": [
     "javascript",
     "web api",
     "高级程序设计",
     "对象"
   ],
+  "scripts": {
+    "dev": "rspress dev",
+    "build": "rspress build",
+    "preview": "rspress preview"
+  },
+  "dependencies": {
+    "rspress": "^1.0.0"
+  },
   "devDependencies": {
-    "vite": "^4.4.9"
+    "@types/node": "^16",
+    "prettier": "^3.2.5"
   }
 }
