@@ -1,0 +1,40 @@
+# ArrayBuffer
+
+import { Sandpack } from '@codesandbox/sandpack-react'
+
+## ArrayBuffer 对象转换为其对应的十六进制字符串
+
+<Sandpack
+  template='vanilla'
+   options={{ showConsole: true }} 
+  files={{
+    '/index.js':{
+      code:`
+      function arrayBuffer2HexString(buffer){
+          const  arr = Array.prototype.map.call(new Uint8Array(buffer), function (byte) {
+    return ('00' + byte.toString(16)).slice(-2)
+  })
+
+const res = arr.join('')
+return res
+}
+
+const buffer = new ArrayBuffer(4)
+console.log(buffer)
+
+const view = new DataView(buffer)
+
+view.setInt8(0,0x12)
+view.setInt8(1,0x34)
+view.setInt8(2,0x56)
+view.setInt8(3,0x78)
+
+const hexString = arrayBuffer2HexString(buffer)
+
+console.log(hexString)
+
+`
+},
+
+}}
+/>

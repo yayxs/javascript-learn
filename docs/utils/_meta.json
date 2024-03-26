@@ -1,0 +1,12 @@
+[
+  {
+    "type": "file",
+    "name": "index",
+    "label": "overview"
+  },
+  {
+    "type": "dir",
+    "name": "ArrayBuffer",
+    "label": "ArrayBuffer"
+  }
+]

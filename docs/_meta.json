@@ -1,7 +1,12 @@
 [
   {
-    "text": "运算符",
-    "link": "/operators/index",
-    "activeMatch": "^/operators/"
+    "text": "字符串",
+    "link": "/string/",
+    "activeMatch": "/string/"
+  },
+  {
+    "text": "工具函数",
+    "link": "/utils/",
+    "activeMatch": "/utils/"
   }
 ]
